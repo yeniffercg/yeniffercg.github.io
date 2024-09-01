@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 *{
     margin: 0%;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;  /* elimina las viñetas*/
 }
@@ -10,14 +11,14 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header {
     background-color: #7e463d;
     background-size: cover;
-    min-height: 50vh;
-    display: flex;
+    min-height: 60vh;
+    display: grid;
     align-items: center;
 }
 
@@ -27,7 +28,7 @@ body {
     left: 0;
     right: 0;
     display: flex;
-    align-items: Left;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -45,24 +46,28 @@ body {
 
 .header-content {
     text-align: center;
-    align-items: center;
 }
 
 .header-content h1 {
     font-size: 60px;
     line-height: 80px;
     color: white;
+    margin-bottom: 35px;
+    text-align: center;
 }
 
 .header-content p {
     font-size: 30px;
     color: white;
-    padding: 0 200px;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    margin-right: 50px;
 }
 
 #sobremi {
     padding: 40px 0;
-    background-color: #CE967B
+    background-color: #CE967B;
+    text-align: center;
 }
 
 #sobremi h2 {
@@ -75,23 +80,25 @@ body {
 
 #sobremi p {
     font-size: 20px;
-    text-align: left;
-    text-justify:newspaper;
+    text-align: center;
     padding-right: 30%;
+    padding-left: 30%;
 }
 
 .Hobbies h2 {
     font-size: 25px;
     line-height: 70px;
     color: saddlebrown;
-    padding: 0 250px;
+    padding: 0px 250px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .Hobbies p {
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     padding-right: 30%;
+    padding-left: 30%;
 }
 
 div.gallery {
@@ -112,10 +119,6 @@ div.gallery {
     text-align: center;
   }
   
-  * {
-    box-sizing: border-box;
-  }
-
   .responsive {
     padding: 0 6px;
     float: left;
@@ -127,6 +130,7 @@ div.gallery {
     display: table;
     clear: both;
   }
+
 .footer {
   padding: 80px 0;
     background-color:  #7e463d; 
@@ -140,12 +144,27 @@ div.gallery {
 .link h3 {
     font-size: 20px;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .link a {
     font-size: 16px;
     color: white;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-widht:600px) {
+    .header {
+        display: flex;
+    }
+    .header-content p {
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+
+    #sobremi h2 {
+        padding:0px;
+    }
 }
