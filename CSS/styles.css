@@ -154,9 +154,10 @@ div.gallery {
     margin-bottom: 10px;
 }
 
-@media (max-widht:600px) {
+@media (max-widht:700px) {
     .header {
         display: flex;
+        width: fit-content;
     }
     .header-content p {
         padding: 0px;
