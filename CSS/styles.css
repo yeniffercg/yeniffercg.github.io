@@ -7,12 +7,9 @@
 }
 body {
     font-family: "Quicksand", sans-serif;
+    min-width: fit-content;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .header {
     background-color: #7e463d;
